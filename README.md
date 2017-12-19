@@ -27,4 +27,4 @@ request with JSON body, I have to use POST instead of GET sometime.
 | /api/commonlist 	        | POST / GET  |
 | /api/subscribe	        | PUT         |
 | /api/block	            | PUT         |
-| /api/updatelist	        | POST        |
+| /api/updatelist	        | POST / GET  |
