@@ -103,7 +103,7 @@ describe('API endpoint /api', function() {
 	].forEach(value => {
 		it('should set subscribe', function() {
 			return chai.request(app)
-				.post('/api/subscribe')
+				.put('/api/subscribe')
 				.send(value)
 				.then(function(res) {
 					expect(res).to.have.status(200);
@@ -122,7 +122,7 @@ describe('API endpoint /api', function() {
 	].forEach(value => {
 		it('should set block ', function() {
 			return chai.request(app)
-				.post('/api/block')
+				.put('/api/block')
 				.send(value)
 				.then(function(res) {
 					expect(res).to.have.status(200);

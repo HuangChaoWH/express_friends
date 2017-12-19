@@ -1,7 +1,8 @@
+'use strict';
+
 var express = require('express');
 var router = express.Router();
 
-//var utils= require('./utils/utils');
 var connection            = require('../dbconnection');
 
 var findFriendNamebyID    = require('../utils/findFriendNamebyID');
@@ -14,9 +15,9 @@ var updateKeywithIDsBlock = require('../utils/updateKeywithIDsBlock');
 var updateKeywithIDsType  = require('../utils/updateKeywithIDsType');
 
 // subscribe to updates from an email address
-// POST /api/subscribe
+// PUT /api/subscribe
 router.route('/subscribe')
-.post(function(req, res) {
+.put(function(req, res) {
 	console.log(JSON.stringify(req.body, null, 4));
 
     var array_id = [];

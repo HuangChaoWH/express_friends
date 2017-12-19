@@ -1,7 +1,8 @@
+'use strict';
+
 var express = require('express');
 var router = express.Router();
 
-//var utils= require('./utils/utils');
 var connection            = require('../dbconnection');
 
 var findFriendNamebyID    = require('../utils/findFriendNamebyID');
@@ -15,8 +16,6 @@ var updateKeywithIDsType  = require('../utils/updateKeywithIDsType');
 
 // retrieve friends list
 // POST /api/friendlist
-// SELECT u.email_address FROM sp_db.user_relationship r RIGHT JOIN sp_db.user u ON u.user_id = r.friend_id WHERE r.user_id = 1;//
-// SELECT u.email_address FROM sp_db.user_relationship r RIGHT JOIN sp_db.user u ON u.user_id = r.friend_id WHERE r.user_id = 1 ORDER BY u.user_id;
 router.route('/friendlist')
 	.post(function(req, res) {
 		console.log(JSON.stringify(req.body, null, 4));

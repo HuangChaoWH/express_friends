@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express');
 var router = express.Router();
 
@@ -16,7 +18,7 @@ var updateKeywithIDsType  = require('../utils/updateKeywithIDsType');
 // block updates from an email address
 // PUT /api/block
 router.route('/block')
-.post(function(req, res) {
+.put(function(req, res) {
 	console.log(JSON.stringify(req.body, null, 4));
 
     var array_id = [];
