@@ -1,8 +1,6 @@
 
 # Friends Management
 
-After requiements, I finished
-
 For first time, install modules with command:
 
 ```
@@ -10,8 +8,7 @@ make install
 ```
 
 
-
-To test all requirments, run command:
+To test all user stories, run command:
 
 ```
 make test
@@ -19,7 +16,7 @@ make test
 
 
 ## Route and HTTP Ver
-Different REST request should be used for API, as the requirement always send
+Different REST request should be used for API, as the user stories always send
 request with JSON body, I have to use POST instead of GET sometime.
 
 
