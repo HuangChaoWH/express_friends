@@ -1,7 +1,7 @@
 
 # Friends Management
 
-This API server developed with JavaScript and Express and other modules.
+This API server was developed with JavaScript, Node.JS and Express.JS and other modules.
 
 For first time, install modules with command:
 
