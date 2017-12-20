@@ -3,6 +3,8 @@
 
 This API server was developed with JavaScript, Node.JS and Express.JS and other modules.
 
+The server developed on Ubuntu 16.04 64bit, MySQL installed and used as database.
+
 For first time, install modules with command:
 
 ```
