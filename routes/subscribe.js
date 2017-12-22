@@ -64,7 +64,7 @@ router.route('/subscribe')
             if ( rows.length == 0 ) {
                 return insertKeywithIDs(array_id[0], array_id[1], 1, 0) ;
              } else {
-                return updateKeywithIDs(array_id[0], array_id[1], 1, 0) ;
+                return updateKeywithIDsType(array_id[0], array_id[1], 1, 0) ;
             }
         })
         .then(function(rows){
